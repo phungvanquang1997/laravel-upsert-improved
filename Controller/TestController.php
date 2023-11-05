@@ -9,13 +9,27 @@ use Illuminate\Support\Facades\App;
 
 class TestController extends Controller
 {
-    public function test(UserRepository $userRepository)
+    public function test()
     {
-        $a = $this->getAll();
-        \DB::enableQueryLog();
-        App::make(User::class)->wantsUpsert($a);
-        dd(\DB::getQueryLog());
-
+         $records = [
+            [
+                'id' => 1,
+                'name' => 'QuangPV1',
+                'email' => 'quangpv@gmal.com1',
+            ],
+            [
+                'id' => 2,
+                'name' => 'QuangPV2',
+                'email' => 'quangpv@gmal.com2',
+            ],
+            [
+                'id' => 3,
+                'name' => 'QuangPV3',
+                'email' => 'quangpv@gmal.com3',
+            ],
+        ];
+       // or this->repository->wantsUpsert($records)
+       App::make(User::class)->wantsUpsert($records);
     }
 
     public function getAll()
