@@ -33,4 +33,28 @@ INSERT INTO ... ON DUPLICATE KEY UPDATE ...
 - Đã work trên MYSQL, còn lại mình chưa test :D
 - Bạn có thể chỉ dùng trait SqlBulkUpdatable nếu bạn chỉ muốn dùng cho bulk update, hoặc wantsUpsertQuery cho cả update và insert
 
+*Diễn giải khác
+
+Update record bằng nhiều câu query (1)
+hay một câu query thì tốt hơn (2) ?
+=========================
+  update table
+  set some_field = val_1
+  where id = 1
+  update table
+  set some_field = val_2
+  where id = 2
+  ...
+  update table
+  set some_field = val_n
+  where id = 3
+=========================
+  update table
+  set some_field = CASE WHEN ....
+=========================
+Khi dùng (1), bạn phải check n điều kiện trong n lần update
+=> n^2 lần
+Khi dùng (2), bạn chỉ check n điều kiện chỉ trong 1 lần gọi table
+=> n lần
+
 Thanks for reading, happy coding
