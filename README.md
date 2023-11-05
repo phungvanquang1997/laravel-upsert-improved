@@ -27,7 +27,7 @@ INSERT INTO ... ON DUPLICATE KEY UPDATE ...
 - và câu upsert (SQL trên) có hổ trợ nhiều key (khóa chính và cặp khóa chính) 
 
 ** Một vài lưu ý
-- Hiện tại code của mình chỉ support 1 field thôi nhé :D
+- Hiện tại code của mình chỉ support 1 field, bạn có thể folk rồi code thêm nhé :D
 - Bạn có thể chỉ dùng trait SqlBulkUpdatable nếu bạn chỉ muốn dùng cho bulk update, hoặc wantsUpsertQuery cho cả update và insert
 - Có thể trong Model bạn phải thêm hàm để format lại updated_at và created_at
 
