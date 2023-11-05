@@ -32,18 +32,18 @@ class TestController extends Controller
             ],
         ];
       
-       $index = ['id'] // update by id
+       $index = 'id'; // update by id
        $fieldsUpdate = ['name']; // just update field `name`
        $expectFields = ['name']; // update all fields except field `name`
 
        // Just update field `name`
-       App::make(User::class)->wantsUpsert($records, ['id'], ['name'], []); 
+       App::make(User::class)->wantsUpsert($records, 'id', ['name'], []); 
       
        // Update all field by id
-       App::make(User::class)->wantsUpsert($records, ['id'], [], []);
+       App::make(User::class)->wantsUpsert($records, 'id', [], []);
      
       // update all field except 'email'
-       App::make(User::class)->wantsUpsert($records, ['id'], [], ['email']);
+       App::make(User::class)->wantsUpsert($records, 'id', [], ['email']);
 
        // or this->repository->wantsUpsert($records)
     }
