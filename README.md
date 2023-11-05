@@ -30,7 +30,7 @@ INSERT INTO ... ON DUPLICATE KEY UPDATE ...
 
 ** Một vài lưu ý
 - Hiện tại code của mình chỉ support 1 field, bạn có thể folk rồi code thêm nhé :D
-- Đã work trên MYSQL
+- Đã work trên MYSQL, còn lại mình chưa test :D
 - Bạn có thể chỉ dùng trait SqlBulkUpdatable nếu bạn chỉ muốn dùng cho bulk update, hoặc wantsUpsertQuery cho cả update và insert
 
 Thanks for reading, happy coding
