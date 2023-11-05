@@ -21,6 +21,8 @@ INSERT INTO ... ON DUPLICATE KEY UPDATE ...
   
   + 1 câu dùng batch update: update...case...when
 
+- Use case hay dùng: import data từ file
+
 ** Vậy upsert của laravel dùng ổn trong trường hợp nào?
 
 - Khi bạn nghĩ luồng logic của bạn đang làm có ít dữ liệu (chỉ có 5-10 records) thì dùng có sẵn của laravel cho nhanh, cũng không đáng kể
