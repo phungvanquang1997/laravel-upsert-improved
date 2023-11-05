@@ -31,9 +31,4 @@ class TestController extends Controller
        // or this->repository->wantsUpsert($records)
        App::make(User::class)->wantsUpsert($records);
     }
-
-    public function getAll()
-    {
-        return User::query()->get();
-    }
 }
