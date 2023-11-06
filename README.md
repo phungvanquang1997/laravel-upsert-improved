@@ -92,6 +92,23 @@ Cập nhật bài viết [06/11]
 
 => upsert của laravel chỉ chạy một câu cho toàn bộ câu insert và update
 
+=> upsert của laravel sau khi dùng một cách đúng đắn và test lại thì nhanh gấp chục lần cách dùng "UPDATE CASE WHEN" và
+
+gấp đôi với cách dùng "dynamic temporary table"
+
+`(
+  UPDATE date_test
+  join
+    SELECT *
+    FROM (
+        VALUES
+        ROW....
+      ) AS temp_table(id, name, code)
+    ) as temp_data
+  on ...
+  set ...
+)`
+
 https://dev.mysql.com/.../8.0/en/insert-on-duplicate.html
 
 
