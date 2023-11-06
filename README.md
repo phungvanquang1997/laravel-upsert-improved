@@ -76,11 +76,12 @@ query (2)
 `
 
 ---------------------------------------------------------------------------------------------
-Khi dùng (1), bạn phải check n điều kiện trong n lần update
+Khi dùng (1), bạn phải check n điều kiện trong n lần update<br>
 => n^2 lần
-Khi dùng (2), bạn chỉ check n điều kiện chỉ trong 1 lần gọi table
+<br>
+Khi dùng (2), bạn chỉ check n điều kiện chỉ trong 1 lần gọi table<br>
 => n lần
-
+<br><br>
 
 
 Cập nhật bài viết [06/11]
