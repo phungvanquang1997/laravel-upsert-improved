@@ -29,7 +29,7 @@ INSERT INTO ... ON DUPLICATE KEY UPDATE ...
 - và câu upsert (SQL trên) có hổ trợ nhiều key (khóa chính và cặp khóa chính) 
 
 ** Một vài lưu ý
-- Hiện tại code của mình chỉ support 1 field, bạn có thể folk rồi code thêm nhé :D
+- Hiện tại code của mình chỉ support 1 field, bạn có thể fork rồi code thêm nhé :D
 - Đã work trên MYSQL, còn lại mình chưa test :D
 - Bạn có thể chỉ dùng trait SqlBulkUpdatable nếu bạn chỉ muốn dùng cho bulk update, hoặc wantsUpsertQuery cho cả update và insert
 
