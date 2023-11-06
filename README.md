@@ -57,4 +57,17 @@ Khi dùng (1), bạn phải check n điều kiện trong n lần update
 Khi dùng (2), bạn chỉ check n điều kiện chỉ trong 1 lần gọi table
 => n lần
 
+
+
+Cập nhật bài viết [06/11]
+
+- Mình test thiếu trường hợp nên nghĩ upsert chưa hổ trợ bulk update, bulk insert
+
+- upsert chỉ hổ trợ primary key hoặc unique key
+
+=> upsert của laravel chỉ chạy một câu cho toàn bộ câu insert và update
+
+https://dev.mysql.com/.../8.0/en/insert-on-duplicate.html
+
+
 Thanks for reading, happy coding
