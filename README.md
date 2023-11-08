@@ -84,7 +84,9 @@ Khi dùng (2), bạn chỉ check n điều kiện chỉ trong 1 lần gọi tabl
 <br><br>
 
 
-Cập nhật bài viết [06/11]
+Cập nhật bài viết 
+
+[06/11]
 
 - Mình test thiếu trường hợp nên nghĩ upsert chưa hổ trợ bulk update, bulk insert
 
@@ -110,6 +112,12 @@ gấp đôi với cách dùng "dynamic temporary table"
 )`
 
 https://dev.mysql.com/.../8.0/en/insert-on-duplicate.html
+
+[8/11]
+
+- Mình vừa có viết thêm package để dùng cho bulk update, nếu bạn cần có thể xem tại
+
+https://github.com/quanggpv/fast-batch-update
 
 
 Thanks for reading, happy coding
